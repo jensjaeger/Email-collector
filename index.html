@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>BIG email collector</title>
+
+<link href="style.css" rel="stylesheet" type="text/css" /> <!-- Stylesheet -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script><!-- include JQuery -->
+<script type="text/javascript" src="jquery.autobahn81.js"></script><!-- include some validations -->
+
+<!--[if IE]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+	<section id="contact">
+	
+		<header>
+			<h1>BIG Email collector</h1>
+			<p>A HTML5 and CSS3 email collector.</p>
+		</header>
+		
+        <form method="post" action="email.php" name="contactform" id="contactform" autocomplete="on">
+
+          <fieldset>
+	          <legend>Email</legend>
+	          <div>
+		          <input name="email" type="email" id="email" placeholder="Enter your Email Address" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
+	          </div>
+						<mark id="email_wrong">This doesn't look like a email adress</mark>
+						<mark id="email_right">Looks like an email adress</mark>
+	        </fieldset> 
+	
+		      <input type="submit" class="submit" id="submit" value="Submit" />        
+
+        </form>
+                    
+	</section>
+
+</body>
+</html>

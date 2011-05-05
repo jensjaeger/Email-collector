@@ -1,0 +1,141 @@
+/* Remove this when pasting into your Stylesheet! */
+
+body { font: 100% "Droid Sans Regular", sans-serif; color: #666; background:#eee; }
+
+/* END Remove This */
+
+@font-face {
+	font-family: 'Droid Sans Regular';
+	src: url('../font/DroidSans.eot');
+	src: local('Droid Sans Regular'), local('DroidSans-Regular'), url('font/DroidSans.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Droid Sans Bold';
+	src: url('../font/DroidSans-Bold.eot');
+	src: local('Droid Sans Bold'), local('DroidSans-Bold'), url('.font/DroidSans-Bold.ttf') format('truetype');
+}
+
+#contact p { font: 3.5em "Droid Sans Regular", sans-serif; }
+
+#contact legend { font: 3.5em "Droid Sans Bold", sans-serif; }
+
+#contact h1 { margin: 10px 0 10px; font: 5em "Droid Sans Bold", sans-serif; color: #333333; }
+
+#contact { 
+	display: block; 
+	width: 960px; 
+	margin: 50px auto; 
+	padding: 35px; 
+	border: 2px solid #cbcbcb; 
+	background-color: #FFF; 
+	
+	-webkit-border-radius:15px; 
+	-moz-border-radius:15px; 
+	border-radius:15px; 
+	
+	box-shadow: 0 2px 20px rgba(50, 50, 50, 0.1);
+	-webkit-box-shadow: 0 2px 20px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow: 0 2px 20px rgba(50, 50, 50, 0.1);
+	
+	-webkit-box-reflect: below 3px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.8, transparent), to(rgba(255,255,255,0.7)));
+}
+
+/* Form style */
+
+#contact input { 
+	width: 880px; 
+	padding: 25px; 
+	color: #666; 
+	background: #f5f5f5; 
+	border: 2px solid #ccc; 
+	margin: 5px 0; 
+	font:3.4em "Droid Sans Bold", sans-serif;
+	-webkit-border-radius:15px; 
+	-moz-border-radius:15px; 
+	border-radius:15px; 
+	vertical-align: top;
+	
+	transition: all 1.5s ease-in-out; 
+	-webkit-transition: all 1.5s ease-in-out; 
+	-moz-transition: all 1.5s ease-in-out; 
+	
+	box-shadow: 0 0 5px rgba(81, 203, 238, 0); 
+	-webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 0); 
+	-moz-box-shadow: 0 0 5px rgba(81, 203, 238, 0); 
+} 
+
+
+#contact input:focus { 
+	border: 2px solid #ddd; 
+	background-color: #fff; 
+	color:#333; 
+	outline: none;
+	position: relative;
+	z-index: 5;
+	
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	-webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	-moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	
+	-webkit-transform: scale(1.03);
+	-moz-transform: scale(1.03);
+	
+	transition: all 0.25s ease-in-out; 
+	-webkit-transition: all 0.25s ease-in-out; 
+	-moz-transition: all 0.25s ease-in-out; 
+}
+#contact input.error {
+	box-shadow: 0 0 5px rgba(204, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 5px rgba(204, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 5px rgba(204, 0, 0, 0.5);
+	border: 1px solid #faabab;
+	background: #fef3f3
+}
+#contact input.submit { 
+	width: auto; 
+	cursor: pointer; 
+	position: relative;
+	border: 2px solid #282828; 
+	color:#fff; 
+	padding: 16px 60px;
+	text-decoration: none;
+	font-size: 1.5em;
+	
+	background:#555; 
+	
+	background:-webkit-gradient(
+	    linear,
+	    left bottom,
+    	left top,
+	    color-stop(0.12, rgb(60,60,60)),
+	    color-stop(1, rgb(85,85,85))
+	);
+	background:-moz-linear-gradient(
+	    center bottom,
+	    rgb(60,60,60) 12%,
+    	rgb(85,85,85) 100%
+	);
+	
+	box-shadow: 0 2px 3px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+	
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+#contact input.submit:hover { 
+	background: #282828 !important; 
+	transition: none;
+	-webkit-transition: none;
+	-moz-transition: none; 
+}
+#contact input.submit:active, #contact input.submit:focus { 
+	top: 1px; 
+}
+
+#contact input[type="submit"][disabled] { background:#888; }
+#contact fieldset { padding:20px; border:2px solid #eee; -webkit-border-radius:15px; -moz-border-radius:15px; margin:0 0 20px; }
+#contact legend { padding:7px 10px; font-weight:bold; color:#000; border:2px solid #eee; -webkit-border-radius:15px; -moz-border-radius:15px; margin-bottom:0 !important; margin-bottom:20px; }
+
+#email_wrong {color: red;}
+#email_right {color: green;}
