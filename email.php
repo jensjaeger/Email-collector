@@ -26,7 +26,7 @@
 
   	        $subject = 'This is BIG email collector on your website';
 
- 					  $body = 'Sombody subitted the adress: ' . $email . '.\r\n\n';
+ 					  $body = 'Sombody submitted the adress: ' . $email . '.\r\n\n';
 
 					  mail($address, $subject, $body, "From: $email\r\nReply-To: $email\r\nReturn-Path: $email\r\n");
 
